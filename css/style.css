@@ -1,0 +1,217 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+
+
+      /* background-image: url("images/v2_Designed-pages5.jpg"), url("images/v2_Designed-pages3.jpg");
+      background-position: right bottom, right top;
+      background-repeat: no-repeat, no-repeat;
+      background-blend-mode: lighten; */
+
+      /* background-image: url("images/v2_Designed-pages5.jpg"); */
+      /* background-image: url("images/v2_Designed-pages5_v2.jpg"); */
+
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: fit-content;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding:10px 40px 10px 40px;;
+    }
+
+    /* Make the logo responsive */
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .burger-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    /* Add this for accessibility */
+    .burger-icon[aria-expanded="true"] .bar::before,
+    .burger-icon[aria-expanded="true"] .bar::after {
+      content: "";
+      display: block;
+    }
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 3px 0;
+    }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      display: none;
+    }
+
+    nav.active {
+      display: block;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .item {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      /* background-color: #f0f0f0; */
+      margin: 5px;
+      text-align: center;
+      color: #fff;
+      background-color: #000 0.4;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header {
+        padding: 10px;
+      }
+      .logo {
+        width: 80%;
+      }
+      .burger-icon {
+        display: flex;
+      }
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+        align-items: center; /* Align menu items in the middle */
+      }
+      nav.active {
+        display: block;
+      }
+      nav a {
+        padding: 15px;
+      }
+      .container {
+        max-width: 100%;
+      }
+      .item {
+        flex: 1 1 100%;
+        padding: 20px;
+      }
+    }
+
+    /* Desktop view */
+    @media (min-width: 769px) {
+      .burger-icon {
+        display: none; /* Hide the burger icon */
+      }
+
+      nav {
+        display: flex; /* Show the navigation menu */
+        align-items: center; /* Align items vertically */
+        max-width: fit-content;
+        margin-left: auto; /* Align menu to the right */
+      }
+
+      nav a {
+        padding: 10px 15px; /* Adjust padding for desktop view */
+      }
+
+/* background style */
+
+.backgroundStyles1 {
+  background-image: url(images/v2_Designed-pages5_01.png);
+  background-position: right bottom -35px;
+  background-size: contain; 
+  background-repeat: no-repeat;
+
+ }
+  
+  
+  .backgroundStyles2 {
+  background-image: url(images/v2_Designed-pages5_02.png);
+  background-position: left bottom 145px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+
+
+  text-align: left;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-shadow: inset 70px 10px 113px -60px rgb(0 0 0);
+
+  }
+    
+.backgroundStyles3{
+  background-image: url(images/v2_Designed-pages5_03.png);
+  background-position: right bottom -35px;
+  background-size: contain; 
+  background-repeat: no-repeat;  height: auto;
+  box-shadow: inset 70px 10px 123px 40px rgb(0 0 0);
+}
+
+.backgroundStyles4{
+  background-image: url(images/v2_Designed-pages6.jpg);
+  background-position: right bottom -135px;
+  background-size: inherit; 
+  background-repeat: no-repeat;  height: auto;
+  box-shadow: inset 70px 10px 123px 40px rgb(0 0 0);
+}
+
+
+
+    }
+
+    .NavigationSize{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;    }
+
+
+
+
