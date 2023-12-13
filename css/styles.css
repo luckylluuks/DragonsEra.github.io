@@ -14,7 +14,7 @@ html, body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#4b637c',GradientType=0 );	
 	
 	/* background-image: url(images/v2_Designed-pages5_01.png); */
-	background-image: url(images/Background_IntroPage_v2.png);
+	background-image: url(css/images/Background_IntroPage_v2.png);
 	background-size: cover;
 	background-position: bottom;
 }
